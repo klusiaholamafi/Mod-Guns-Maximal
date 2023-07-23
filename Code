@@ -1,0 +1,7 @@
+for i,v in next, getgc(true) do
+  if type(v) == "table" and rawget(v, "Damage") then
+     rawset(v, "RateOfFire", 0.1) -- firerate
+     rawset(v, "ClipSize", 2500) -- inf ammo only works on shotguns etc (math.huge or 0 etc) MaxAmmo
+     rawset(v, "Clips", 2500) -- Ammo
+  end
+end
